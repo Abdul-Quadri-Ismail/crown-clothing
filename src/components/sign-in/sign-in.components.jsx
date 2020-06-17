@@ -13,6 +13,7 @@ class SignIn extends React.Component{
         super(props);
 
         this.state={
+
             email:'',
             password:''
         }
@@ -81,7 +82,7 @@ class SignIn extends React.Component{
               </CustomButton>
                <CustomButton
                onClick={signInWithGoogle}
-                isGoogleSignIn>Sign In with Google
+                isGoogleSignIn>Google
                </CustomButton>
            
             </div>

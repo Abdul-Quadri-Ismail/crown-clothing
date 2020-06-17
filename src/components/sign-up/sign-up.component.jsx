@@ -21,7 +21,7 @@ class SignUp extends React.Component {
             password:'',
             confirmPassword:''
         }
-        this.handleSubmit=this.handleSubmit.bind();
+
     }
 
     handleSubmit= async event => {
@@ -42,10 +42,12 @@ class SignUp extends React.Component {
             const {user} = await auth.createUserWithEmailAndPassword(
                  email,
                  password
-                 );
+                 )
+
+                
             
          await createUserProfleDocument(user,{displayName})
-        
+
 
          this.setState({
             displayName:'',
