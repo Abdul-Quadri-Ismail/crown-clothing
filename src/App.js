@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 
 import {connect} from 'react-redux';
-
 import Header from './components/header/header.component';
 import HomePage from './pages/hompage/homepage.component';
 import {Route,Switch,Redirect} from 'react-router-dom';
@@ -64,16 +63,14 @@ return (
     <Route exact path='/' component={HomePage}/>
     <Route exact path='/shop' component={ ShopPage }/>
     <Route exact path='/signin'
-     render={ () => 
+     render={ 
+       () => 
       this.props.currentUser ?
        (<Redirect to='/' />
-
-       ):(
-         <SignInAndSigUpPage />
-       
-       )}/>
-    <Route exact component={ Error } />
-    </Switch>
+       ):( <SignInAndSigUpPage />      
+       )}/>  
+    <Route exact component={ Error } /> 
+    </Switch>    
 
     </div>
   );
