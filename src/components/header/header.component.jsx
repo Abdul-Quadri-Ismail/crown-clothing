@@ -1,5 +1,6 @@
   
 import React from 'react';
+
 import { Link } from 'react-router-dom';
 
 import { auth } from '../../firebase/firebase.utills.js';
@@ -9,6 +10,7 @@ import { ReactComponent as Logo } from '../../assest/logo.svg';
 import {connect} from 'react-redux';
 
 import CartIcon  from '../cart/cart.component';
+
 import CartDropDown  from '../cart-dropdown/cart-dropdown.component';
 
 
@@ -24,7 +26,7 @@ const Header = ({ currentUser,hidden }) => (
       <Link className='option' to='/shop'>
         SHOP
       </Link>
-      <Link className='option' to='/shop'>
+      <Link className='option' to=''>
         CONTACT
       </Link>
       { currentUser ? (

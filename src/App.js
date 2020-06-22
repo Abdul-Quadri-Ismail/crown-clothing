@@ -2,12 +2,19 @@ import React from 'react';
 import './App.css';
 
 import {connect} from 'react-redux';
+
 import Header from './components/header/header.component';
+
 import HomePage from './pages/hompage/homepage.component';
+
 import {Route,Switch,Redirect} from 'react-router-dom';
+
 import ShopPage from './pages/shop/shop.component';
+
 import SignInAndSigUpPage from './pages/sign-in-and-signout/sign-in-and-signout';
+
 import {auth,createUserProfleDocument} from './firebase/firebase.utills';
+
 
  import {setCurrentUser} from './redux/user/user.action';
 
@@ -49,6 +56,7 @@ class App extends React.Component {
       }
 
       setCurrentUser({userAuth});
+      
     })
   }
 
