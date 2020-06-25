@@ -9,6 +9,9 @@ import HomePage from './pages/hompage/homepage.component';
 
 import {Route,Switch,Redirect} from 'react-router-dom';
 
+import  {createStructuredSelector} from 'reselect'
+import { selectCurrentUser } from './redux/user/user.selector'
+
 import ShopPage from './pages/shop/shop.component';
 
 import SignInAndSigUpPage from './pages/sign-in-and-signout/sign-in-and-signout';
@@ -85,8 +88,8 @@ return (
     }
   }
   
-  const mapStateToProps= ({ user })=>({
-    currentUser:user.currentUser
+  const mapStateToProps=createStructuredSelector({
+    currentUser:selectCurrentUser
   })
 
 const mapDispatchToProps= dispatch=>({
