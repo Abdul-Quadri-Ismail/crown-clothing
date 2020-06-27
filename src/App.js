@@ -74,7 +74,7 @@ return (
     <Header/>
     <Switch>
     <Route exact path='/' component={HomePage}/>
-    <Route exact path='/shop' component={ ShopPage }/>
+    <Route   path='/shop' component={ ShopPage }/>
     <Route exact path='/checkout' component={ CheckOutPage }/>
     <Route exact path='/signin'
      render={ 
@@ -83,8 +83,7 @@ return (
        (<Redirect to='/' />
        ):( <SignInAndSigUpPage />      
        )}/>  
-    <Route exact component={ Error } /> 
-    </Switch>    
+     </Switch>    
 
     </div>
   );

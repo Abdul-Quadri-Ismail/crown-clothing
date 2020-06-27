@@ -1,5 +1,5 @@
-const SHOP_DATA = [
-  {
+const SHOP_DATA = {
+  hats:{
     id: 1,
     title: 'Hats',
     routeName: 'hats',
@@ -7,13 +7,13 @@ const SHOP_DATA = [
       {
         id: 1,
         name: 'Brown Brim',
-        imageUrl: 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
+        imageUrl: 'https://www.walkerandhawkes.co.uk/wp-content/uploads/2019/03/RT_BOSTON_BROWN_HAT.jpg',
         price: 25
       },
       {
         id: 2,
         name: 'Blue Beanie',
-        imageUrl: 'https://i.ibb.co/ypkgK0X/blue-beanie.png',
+        imageUrl: 'https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1554410456-best-hats-6-1554410450.jpg',
         price: 18
       },
       {
@@ -60,7 +60,7 @@ const SHOP_DATA = [
       }
     ]
   },
-  {
+  sneakers:{
     id: 2,
     title: 'Sneakers',
     routeName: 'sneakers',
@@ -115,7 +115,7 @@ const SHOP_DATA = [
       }
     ]
   },
-  {
+  jackets: {
     id: 3,
     title: 'Jackets',
     routeName: 'jackets',
@@ -129,13 +129,13 @@ const SHOP_DATA = [
       {
         id: 19,
         name: 'Blue Jean Jacket',
-        imageUrl: 'https://i.ibb.co/mJS6vz0/blue-jean-jacket.png',
+        imageUrl: 'https://ae01.alicdn.com/kf/H4eb29dff80f54a99af67732e5e32c22cf/Men-s-Real-Leather-Jacket-Men-Motorcycle-Removable-Hood-winter-coat-Men-Warm-Genuine-Leather-Jackets.jpg',
         price: 90
       },
       {
         id: 20,
         name: 'Grey Jean Jacket',
-        imageUrl: 'https://i.ibb.co/N71k1ML/grey-jean-jacket.png',
+        imageUrl: 'https://image.harrods.com/mackage-james-down-jacket_15050844_25471986_2048.jpg',
         price: 90
       },
       {
@@ -153,8 +153,8 @@ const SHOP_DATA = [
     ]
   },
    
-  {
-    id: 5,
+  mens:{
+    id: 4,
     title: 'Mens',
     routeName: 'mens',
     items: [
@@ -196,6 +196,6 @@ const SHOP_DATA = [
       }
     ]
   }
-];
+}
 
 export default SHOP_DATA;
