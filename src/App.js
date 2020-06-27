@@ -10,6 +10,7 @@ import HomePage from './pages/hompage/homepage.component';
 import {Route,Switch,Redirect} from 'react-router-dom';
 
 import  {createStructuredSelector} from 'reselect'
+
 import { selectCurrentUser } from './redux/user/user.selector'
 
 import ShopPage from './pages/shop/shop.component';
@@ -18,6 +19,7 @@ import SignInAndSigUpPage from './pages/sign-in-and-signout/sign-in-and-signout'
 
 import {auth,createUserProfleDocument} from './firebase/firebase.utills';
 
+import CheckOutPage  from './pages/checkout/checkout.components'
 
  import {setCurrentUser} from './redux/user/user.action';
 
@@ -73,6 +75,7 @@ return (
     <Switch>
     <Route exact path='/' component={HomePage}/>
     <Route exact path='/shop' component={ ShopPage }/>
+    <Route exact path='/checkout' component={ CheckOutPage }/>
     <Route exact path='/signin'
      render={ 
        () => 
