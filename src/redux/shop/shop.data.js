@@ -152,6 +152,43 @@ const SHOP_DATA = {
       }
     ]
   },
+  gadget: {
+    id: 3,
+    title: 'Gadget',
+    routeName: 'gadget',
+    items: [
+      {
+        id: 18,
+        name: ' Shearling',
+        imageUrl: 'https://i.pcmag.com/imagery/reviews/03xdTO0Ka4H4KvEgtSPg4c2-12..v_1569479325.jpg',
+        price: 125
+      },
+      {
+        id: 19,
+        name: 'Blue  ',
+        imageUrl: 'https://ksassets.timeincuk.net/wp/uploads/sites/54/2019/03/Xiaomi-Mi-9-front-angled-top-left.jpg',
+        price: 90
+      },
+      {
+        id: 20,
+        name: 'IphoneX',
+        imageUrl: 'https://www.almond.ma/wp-content/uploads/2019/07/iphone-xs-max-gold-select-2018-600x710.png',
+        price: 90
+      },
+      {
+        id: 21,
+        name: 'Brown  ',
+        imageUrl: 'https://i.pcmag.com/imagery/reviews/03xdTO0Ka4H4KvEgtSPg4c2-12..v_1569479325.jpg',
+        price: 165
+      },
+      {
+        id: 22,
+        name: 'SamSung',
+        imageUrl: 'https://cnet1.cbsistatic.com/img/byGKFjmpvE0svKbgJ-SNgmIYxyc=/470x353/2018/12/04/0e6c5e54-4454-442d-b7af-f508a8df3026/samsung-s9-3.jpg',
+        price: 185
+      }
+    ]
+  },
    
   mens:{
     id: 4,

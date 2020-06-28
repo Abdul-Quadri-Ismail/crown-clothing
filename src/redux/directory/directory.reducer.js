@@ -20,7 +20,7 @@ const INITIAL_STATE={
         },
         {
           title: 'gadget',
-          imageUrl: 'https://www.naijatechguide.com/wp-content/uploads/2018/02/tech-gadget-2018.png',
+          imageUrl: 'https://fdn.gsmarena.com/imgroot/news/19/12/phones-of-the-decade/-727w2/gsmarena_001.jpg',
           size: 'large',
           id: 4,
           linkUrl: 'shop/gadget'
