@@ -3,6 +3,9 @@ import './App.css';
 
 import {connect} from 'react-redux';
 
+import styled from 'styled-components';
+
+
 import Header from './components/header/header.component';
 
 import HomePage from './pages/hompage/homepage.component';
@@ -24,6 +27,8 @@ import CheckOutPage  from './pages/checkout/checkout.components'
  import {setCurrentUser} from './redux/user/user.action';
 
 
+ import { selectCollectionsForPreview } from "./redux/shop/shop.selector";
+
 const Error = props =>{
   console.log(props) 
 return(
@@ -41,7 +46,7 @@ class App extends React.Component {
 
   componentDidMount(){
     
-    const {setCurrentUser} = this.props;
+    const {setCurrentUser,collection} = this.props;
 
     this.unsubcribrFromAuth=auth.onAuthStateChanged(async userAuth=>{
 
@@ -62,6 +67,7 @@ class App extends React.Component {
 
       setCurrentUser({userAuth});
       
+     // addCollectionAndDocument('collections',collection.map(({title,items}) => ({title,items})))
     })
   }
 
@@ -91,7 +97,8 @@ return (
   }
   
   const mapStateToProps=createStructuredSelector({
-    currentUser:selectCurrentUser
+    currentUser:selectCurrentUser,
+    collection:selectCollectionsForPreview
   })
 
 const mapDispatchToProps= dispatch=>({
